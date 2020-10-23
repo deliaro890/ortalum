@@ -1,0 +1,1247 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&family=Nunito:wght@400;700&display=swap');
+
+body{
+    padding: 0px;
+    margin:0px;
+    font-family: 'Montserrat', sans-serif;
+  
+}
+
+a{
+    color: white;
+    text-decoration:none;
+}
+
+.menu_options_web a{
+    color:black;
+}
+
+.cuerpo{
+    display: grid;
+    grid-template-rows: 85px 398px auto 330px 48px;
+
+}
+
+.nav{
+    grid-row: 1;
+    height: 85px;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+    box-sizing: border-box;  
+    position: fixed;
+    top:0px;
+    overflow: hidden;
+    width: 100%; 
+    z-index: 3;
+    background-color:white;
+    /*background-image: linear-gradient(rgba(0,0,0,0.4),white 40%);*/
+    box-shadow: 3px 3px 5px 6px rgba(0,0,0,0.3); 
+
+}
+
+.logo{
+    grid-column: 1;
+    grid-row: 1;
+    height: 60px;
+    width: 235px;
+    position: relative; 
+    background-image: url('../img/ORTA.png');   
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.menu{
+    grid-column: 2; 
+    grid-row: 1; 
+   
+}
+.menu img{
+    height: 40px;
+    width: 40px;
+    float: right;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    
+}
+
+.menu_options{
+    display: none;
+    position: fixed; /**/
+    top:85px; /**/
+    font-weight: 100;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    background-color:#17406F;
+    
+    width: 100%;
+    z-index: 2;
+    color:white;
+}
+
+.menu_options p:hover{
+    color:#DF7F1A;   
+}
+
+.first_option{
+    margin-top: 0px;
+    padding: 5px;
+    padding-top: 15px;
+}
+
+.sliders{
+    grid-row: 2;
+    position: relative;
+    background-image: url('../img/foto_2.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    background-size: 100% 398px;/*evita deformacion*/
+    z-index: 1;
+}
+
+.sliders p{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.leyend{
+
+    height: 100px;
+    background-color: rgba(0,0,0,0.6);
+    width: 280px;
+    padding: 10px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 150px;
+
+}
+
+.content{
+    grid-row: 3;
+    height: auto;/*1530px;*/
+    background-color:#17406F;
+    text-align: center;  
+}
+
+.somos{
+    padding: 10px;
+    position: relative;
+    /*top: 20px;*/
+    color: white;
+    font-family: 'Nunito', sans-serif; 
+}
+
+.text{
+    margin-top:0px;
+}
+
+
+.somos img{
+    height: 230px;
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.distingue{
+    padding: 10px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+   
+
+}
+
+.distingue img{
+    height: 230px;
+    width: 330px;
+  
+}
+
+.mision_y_demas{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+    background-image: url('../img/back_logo_der.png');
+    background-size: 200px 300px;
+    background-position: right;
+    background-repeat: no-repeat;    
+}
+
+.logos{
+    grid-row: 4;
+    grid-column:1;
+    height: 330px;
+    display: grid;
+    grid-template-rows:repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    padding:15px;
+    box-sizing: border-box; 
+    background-color:white; 
+}
+
+
+.logos_imgs{
+    width: 100px;/*si no tiene 0px el div*/
+    height: 70px;
+    background-repeat: no-repeat;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+}
+
+#logo_uno{
+    grid-row: 1;
+    grid-column: 1;
+    background-image: url('../img/logos_proveedores/MADISON.png');
+}
+#logo_dos{
+    grid-row: 1;
+    grid-column: 2;
+    background-image: url('../img/logos_proveedores/pensilvanya.png');
+}
+#logo_tres{
+    grid-row: 1;
+    grid-column: 3;
+    background-image: url('../img/logos_proveedores/Philips.png');
+}
+#logo_cuatro{
+    grid-row: 2;
+    grid-column: 1;
+    background-image: url('../img/logos_proveedores/DESTER.png');
+}
+#logo_cinco{
+    grid-row: 2;
+    grid-column: 2;
+    background-image: url('../img/logos_proveedores/TECNOMX.png');
+}
+#logo_seis{
+    grid-row: 2;
+    grid-column: 3;
+    background-image: url('../img/logos_proveedores/indalum.png');
+}
+#logo_siete{
+    grid-row: 3;
+    grid-column: 1;
+    background-image: url('../img/logos_proveedores/inman.png');
+}
+#logo_ocho{
+    grid-row: 3;
+    grid-column: 2;
+    background-image: url('../img/logos_proveedores/EuroHe.png');
+}
+#logo_nueve{
+    grid-row: 3;
+    grid-column: 3;
+    background-image: url('../img/logos_proveedores/Bruken.png');
+}
+.footer{
+    grid-row: 5;
+    grid-column:1;
+    height: 48px;
+    background-color:#17406F;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer p{
+    margin: 0px;
+    padding-top: 10px;
+    font-size: 15px;
+
+}
+
+.subtitles{
+    color: #DF7F1A;
+    font-weight: bolder;
+    font-size: 25px!important;
+    font-weight: bolder;
+    margin-bottom: 6px;
+
+}
+.menu_options_web p{ /*no lo escondi! y se escondio*/
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    padding: 5px;   
+}
+
+.menu_options_web p:hover{
+    color:white;
+    background-color: #17406F;   
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: .3s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.fotos_web{
+    display: none;
+}
+.leyend_web{
+    display: none;
+}
+
+.contacto{
+    display: none;
+    font-size: 10px;
+    /*font-family: ;*/
+}
+
+.logo_izq{
+    display: none;
+}
+
+.logo_der{
+    display: none;
+}
+
+
+
+/******Servicios********/
+
+.cuerpo_servicios{
+    grid-template-rows: 85px 398px auto 330px 48px;
+
+}
+
+.content_servicios{
+    height: 900px;
+    height: auto; /*se va ajustando!*/
+    background-image: url('../img/back_logo_der.png');
+    background-size: 200px 300px;
+    background-position: right;
+    background-repeat: no-repeat; 
+    padding:20px 0px 20px 0px;
+}
+.vista{
+    background-color: #17406F;
+    color:white;
+}
+
+.sliders_servicios{
+    background-image: url('../img/slider_servicios.jpg')!important;
+    background-size: 1280px 398px;
+    background-repeat: no-repeat;
+    height: 398px; 
+}
+
+.sliders_servicios p{
+    color:#DF7F1A;
+    font-size: 40px;
+    font-style: italic;
+    text-align: right;
+    padding:20px;
+    font-weight: bolder;
+
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.15;
+    top: 20px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.servicios_box{
+    background-color:#DF7F1A;
+    /*position: relative;
+    top: 30px;*/
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.img_servicios{
+    height: 200px;
+    width: 100%;
+}
+
+.servicios_contenido{
+    display: none;
+}
+
+.mas_subtitles{
+    display: grid; 
+    grid-template-columns: 30% 70%; 
+    padding: 5px;     
+}
+
+
+.mas{
+    grid-column:1;
+    color: white;
+    cursor: pointer;
+    width: 30px;
+    cursor: pointer;
+}
+.mas p{
+    font-weight: bolder;
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    margin:0px; 
+    font-weight: 600; 
+}
+
+.mas_web{
+    display: none;
+    color: white;
+    cursor: pointer;
+    width: 30px;   
+}
+
+.mas_web p{
+    font-weight: bolder;
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    margin:0px;
+    font-weight: 600;
+   
+}
+
+.servicio_title{
+    grid-column:2;
+    color:white;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bolder;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+}
+.text_servicios p{
+    margin: 0px;
+    padding: 15px;
+    color: white;
+}
+
+.reparto{
+    background-color: white; 
+}
+.reparto p{
+    color:#DF7F1A;
+}
+/******fin servicios****/
+
+
+/*******productos******/
+
+.cuerpo_productos{
+    grid-template-rows: 85px 398px auto 330px 48px;
+
+}
+
+.slider_producto{
+    background-image: url('../img/productos_slider.jpg')!important;
+    background-size: 1280px 398px;
+    background-repeat: no-repeat;
+    height: 398px; 
+    background-position-x: right;
+}
+.hidden{
+    display: none;
+}
+
+.leyenda_productos p{
+    color:white;
+    font-size:30px!important;
+    margin:auto;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.6);
+    margin:10px;
+    text-align: center;
+}
+.leyenda_productos {
+    margin-top:100px    
+}
+
+
+.content_productos{
+    height: auto;/*2300px;*/
+    background-image: url('../img/back_logo_der.png');
+    background-size: 200px 300px;
+    background-position: right;
+    background-repeat: no-repeat; 
+    background-position-y: 400px;
+    padding:20px 0px 20px 0px;
+}
+
+.logos_content{
+    display: flex;
+    text-align: center;
+}
+
+.contenido_logo{
+    margin:15px;
+    width: 176px;
+}
+
+.contenido_logo_herrajes{
+
+    /*height: 36px;
+    width: 120px;*/
+    width: 123px;
+    margin:10px;
+
+}
+
+.contenido_logo_chapas{
+  
+    width: 137px;
+    margin: 0px 30px 10px 0px;
+    
+}
+.logos_chapas{
+    text-align: center;
+    padding: 15px; /*margin-top:10px..con el padding se ordenó tamb el escritorio!*/
+}
+
+.contenido_vinilo{
+    margin:15px;
+    width: 89px;
+}
+
+.vinilo_1{
+    width: 72px;
+}
+
+.logos_vinilo{
+    width: 89px;
+    margin: 20px;    
+}
+
+.logos_productos{
+    height: 110px;
+}
+.footer_productos{
+    height: 48px;
+}
+
+.segundo{
+    display: none;
+}
+.segundo_derecho{
+    display: none;
+}
+
+/******fin_productos****/
+
+/********sucursales*****/
+
+.cuerpo_sucursales{
+    display: grid;
+    grid-template-rows: 85px 398px auto 330px 48px;/*1800*/
+}
+
+.nav_suc{
+    grid-row: 1;
+    height: 85px;
+}
+
+.sliders_sucursales{
+    grid-row: 2;
+    background-image: url('../img/slider_sucursales.jpg')!important;
+    background-size: 1280px 398px;
+    height: 398px;
+}
+
+.content_sucursales{
+    grid-row: 3;
+    background-color: #DF7F1A;
+    height: auto; /*1800px*/
+
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding:10px;
+}
+
+
+
+.cd{
+    display: grid;
+    width: 260px;
+    width: 247px;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    margin: 20px auto;
+    /*box-shadow: 3px 3px 5px 6px rgba(0,0,0,0.3); */
+}
+.cd p{
+    margin:0px;
+    font-size:17px!important;
+}
+
+.ciudad{
+
+    background-color: #C5E0F5;
+    color:#1F5885;
+    font-weight: bolder;
+    font-style: italic;
+    padding: 10px;
+    font-size:20px;
+    
+
+}
+
+.direccion{
+    background-color: #1F5885;
+    color:white;
+    padding:15px;
+    line-height: 1.5;
+    height: 300px;
+   
+}
+
+
+.llama{
+    background-color: #323232;
+    color:white;
+    padding: 10px;
+    font-size:20px;
+
+}
+.equis{
+    background-color: white;
+    height: 200px;
+}
+.logos_suc{
+    grid-row: 4;
+    height: 330px;
+}
+.footer_suc{
+    grid-row: 5;
+    height: 48px;
+}
+/********fin_ sucursales*****/
+
+@media (min-width: 768px) {
+
+    .cuerpo{
+        grid-template-rows: 85px 398px auto 260px 48px;
+    }
+
+    #hamburguer{
+        display:none;
+    }
+
+    .nav{
+        grid-template-columns: 30% 70%;
+    }
+
+    .menu_options_web p{
+        padding: 5px; 
+        font-size:14px;  
+    }
+
+    .sliders{ 
+        background-image: none;
+        width: 100%; 
+        height: 398px;
+        
+    }
+    .leyend{
+        display: none;
+    }
+
+    .leyend_web{
+        display: block;
+        height: 43px;
+        background-color: rgba(0,0,0,0.6);
+        width: 700px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        position:relative;
+        top:-200px;
+        box-sizing: border-box;
+        margin-top: 15px;
+    }
+
+    .linea2{
+        width: 600px;
+    }
+
+    .animate__animated.animate__fadeIn {
+        --animate-duration: 2s;
+    }
+
+    .leyend_web p{
+       font-size: 30px;
+       font-family: 'Montserrat', sans-serif;
+       font-weight: bolder;
+    }
+
+    .content{
+        text-align: left;
+        height: auto;
+    }
+
+    .fotos_web{
+        display: grid;
+        grid-auto-columns: 34% 33% 33%;
+        grid-template-rows: 100%;
+        
+    }
+
+    .fotos{
+        width: 100%;
+        height: 398px;
+
+    }
+
+    #foto_1{
+        grid-column: 1;
+        
+
+    }
+    #foto_2{
+        grid-column: 2;
+        
+    }
+    #foto_3{
+        grid-column: 3;
+      
+    }
+
+    .fotos{
+        animation-duration: 2s;
+        animation-name: slidein;
+    }
+      
+    @keyframes slidein {
+        from {
+          margin-right: 100%;
+          width: 300%
+        }
+      
+        to {
+          margin-right: 0%;
+          width: 100%;
+        }
+    }
+    .content_text{
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 2;
+        padding:0px;
+    }
+    .somos {
+        display: flex; 
+        margin-top: 20px;   
+    }
+    .somos p{
+        width: 409px;
+        margin-right: 30px;
+    }
+
+    .somos img{
+        /*width: 409px;*/
+        width: 286px;
+        height: 161px;
+    }
+
+    .quienes{
+        margin-top:0px;
+    }
+
+    .distingue_valores{
+        display: flex;
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .distingue{
+        z-index: 2;
+        padding:0px;
+     
+    }
+
+    .distingue p{
+        width: 409px;
+        margin-right: 30px;
+    }
+
+    .distingue img{
+        position: relative;
+        width: 409px;
+        width: 286px;
+        height: 161px;
+    }
+    
+    .logo{
+        margin-left: auto;
+    }
+
+    .contacto_opciones{
+        display: grid;
+        grid-template-rows: 30% 70%;
+        align-items: center;
+    }
+
+    .contacto{
+        grid-row: 1;
+        display: block;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        top:0px;
+    }
+
+    .menu_options_web{
+        grid-row: 2;
+        margin-right: auto;
+        margin-left: auto;
+
+        display: grid;
+        grid-auto-flow: column;
+        text-align: center;
+        grid-column-gap:10px;
+    } 
+
+    .menu_options_web p{
+        margin:0px;
+    }
+
+    .logo_back{
+        display: block;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .logo_izq{
+        top:600px;
+    }
+
+    .logo_der{
+        top:1050px;
+        right: 0px;
+    }
+
+    .mision_y_demas{ 
+        background-image: none;  
+        z-index: 2;
+        padding:0px;
+        margin-top: 20px;
+        width: 409px;
+    }
+
+    .content p{
+        font-size: 20px;
+    }
+
+    .footer{
+        height: 48px;
+    }
+
+    /*****servicios_768*****/
+
+    .cuerpo_servicios{
+        grid-template-rows: 85px 398px auto 260px 48px;
+    
+    }
+    .nav{
+        grid-row: 1;
+        height: 85px;
+    }
+    .sliders_servicios{
+        grid-row: 2;
+        height: 398px;
+    }
+    .content_servicios{ 
+        grid-row: 3;
+        /*background-image:none;*/
+        height: auto;
+        /*background-image: url('../img/back_logo_izq.png');
+        background-repeat: no-repeat;
+        background-position-y: 400px;*/
+        
+    }
+    .content{
+        /*height: 847px;*/
+        height: auto;
+    }
+
+    .logos{
+        grid-row: 4;
+        height: 260px;   
+    }
+
+    .footer{
+        grid-row: 5;
+        height: 48px;
+    }
+    .sliders_servicios p{
+        width: 700px;
+        font-size: 60px;
+    }
+
+    .mas_web{
+        display: block;
+        color: white;
+        cursor: pointer;
+        
+    }
+
+    .mas_web p{
+        font-size: 35px;
+        text-align: center;
+        width: 40px;
+        margin: 0px;
+    }
+    
+    .mas{
+        display: none;
+    }
+
+    .servicios_box{
+        display: table;
+        box-sizing: border-box;
+        padding: 10px;
+        width: 715px;
+        z-index: 2; 
+        height: auto;  
+    }
+
+    .reparto{
+        height: auto;
+    }
+
+    .servicio_title{
+        font-size: 25px!important;
+    }
+
+    .mas_subtitles{
+        grid-template-columns: 10% 90%;
+        padding: 0px;
+    }
+    .img_servicios{
+        height: 230px;
+        width: 344px;
+    }
+    /****fin_servicios_768**/
+
+    /****productos_768*****/
+
+    .cuerpo_productos{
+        /*grid-template-rows: 85px 398px 1500px 110px 48px!important; /*para que pusiera al final del content los logos y el footer ._.*/
+        grid-template-rows: 85px 398px auto 260px 48px!important;
+    }
+
+    .nav{
+        grid-row: 1;
+    }
+
+    .slider_producto{
+        grid-row: 2;
+    }
+
+    .leyenda_productos p{
+       
+        font-size:40px!important;
+        padding: 15px 25px 15px 25px;
+        background-color: rgba(0,0,0,0.6);
+        margin:10px;
+        width: 420px!important;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        
+    }
+    .leyenda_productos {
+        margin-top:70px    
+    }
+
+    #leyenda_p_1{
+        
+        margin-bottom: 80px;
+    }
+   
+
+    .content_productos{
+        grid-row: 3;
+        /*height: 1500px!important;*/
+        height: auto;
+        background-image: none;
+    }
+
+    .logos_chapas{
+        text-align: right;
+        margin-top: 0px;
+    }
+
+    .l_z_p{
+        top:500px;
+        z-index: 0;
+    }
+
+    .contenido_vinilo{
+        margin:15px;
+        width: 89px;
+    }
+
+    .vinilo_1{
+        float: right;
+        width: 96px;
+    }
+
+    .vinilo_2{
+        margin-top: 137px;
+        width: 128px;
+        margin-right: 40px;
+    }
+
+    .lamina{
+        margin: 40%;
+    } 
+   
+    .logos_productos{
+        
+        grid-row: 4;
+        height: 260px;
+    }
+    .footer_productos{
+        grid-row: 5;
+        height: 48px;
+    }
+
+    .segundo{
+        
+        top:1200px;
+        
+    }
+
+    .segundo_derecho{
+        top:1480px;
+        right: 0px;
+    }
+
+    .box{
+        
+        flex-direction: row;
+    }
+
+    /****fin_productos_768**/
+
+    /****sucursales_768***/
+
+    .cuerpo_sucursales{
+        grid-template-rows: 85px 398px auto 260px 48px!important; /*auto*/
+    }
+
+    .sliders_sucursales{
+        background-size: cover;
+    }
+    .content_sucursales{
+        /*height: 680px!important;*/
+        height: auto; 
+    }
+
+    .box{
+       
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        width: 750px;
+    }
+    .box > div {
+        margin: 4px;
+      }
+    .cd{
+        width: 240px;
+    }
+     
+    .cdmx{
+        margin-right: 0px;
+    }
+
+    /* .puebla{
+        margin-right: 22px!important;
+    }   */  
+    
+    /****fin_sucursales_768***/
+
+}
+
+@media (min-width: 900px) {
+
+
+    .cuerpo{
+        grid-template-rows: 85px 398px auto 110px 48px!important;
+    }
+
+    .menu_options_web p{
+        padding: 5px; 
+        font-size:16px;   
+    }
+
+    .leyend_web{
+        width: 70%;
+        box-sizing:content-box;
+        padding: 10px;  
+    }
+    .leyend_web p{
+        font-size:30px;   
+    }
+
+    .linea2{
+        width: 60%;
+    }
+
+    .content{
+        /*height: 847px;*/
+        height: auto;
+    }
+
+    .content_text{
+        width: 850px;
+    }
+
+    .somos img{
+        width: 409px;
+        height: 230px;
+    }
+    .distingue img{
+        width: 409px;
+        height: 230px;
+    }
+
+    .logo_der {
+        top: 880px;
+    }
+    .cd {
+        width: 260px;
+    }
+
+
+    .leyenda_productos {
+        margin-top:70px; 
+    }
+
+    #leyenda_p_1{
+        margin-left: 200px;
+        margin-bottom: 80px;
+    }
+    #leyenda_p_2{
+        margin-left: 400px;
+        
+    }
+
+    .logos{ 
+        height: 110px!important;
+        grid-template-columns:repeat(9, 1fr);
+        grid-template-rows: 100%;   
+    }
+
+    #logo_uno{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #logo_dos{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    #logo_tres{
+        grid-column: 3;
+        grid-row: 1;
+    }
+    #logo_cuatro{
+        grid-column: 4;
+        grid-row: 1;
+    }
+    #logo_cinco{
+        grid-column: 5;
+        grid-row: 1;
+    }
+    #logo_seis{
+        grid-column: 6;
+        grid-row: 1;    
+    }
+    #logo_siete{
+        grid-column: 7; 
+        grid-row: 1;   
+    }
+
+    #logo_ocho{
+        grid-column: 8; 
+        grid-row: 1;   
+    }
+    #logo_nueve{
+        grid-column: 9; 
+        grid-row: 1;   
+    }
+
+}
+
+@media (min-width: 1071px) {
+
+   
+    .leyend_web p{
+        font-size:35px;     
+    }  
+    
+    
+    .leyenda_productos p{
+    
+        width: 600px!important;
+        letter-spacing: 1px;  
+    }
+
+}
+
+@media (min-width: 1180px) {
+
+   
+    .leyend_web {
+        width: 60%;  
+    }  
+    .linea2{
+        width: 50%;
+    } 
+
+    .sliders_servicios{
+       
+        /*background-size:cover;*/
+        height: 398px;
+        width: 100%;
+        background-size: 100% 100%;
+       
+    }
+}
+

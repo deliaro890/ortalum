@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Expires" content="0">
+        <meta http-equiv="Last-Modified" content="0">
+        <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <title>Ortalum</title>
+    </head>
+    <body>
+        <div class="cuerpo cuerpo_servicios">
+            <div class='nav'>
+                <div class='logo'></div>
+                <div class='menu' id='hamburguer'><img src='img/menu.png' onclick="menu()"></div>  
+                <div class="contacto_opciones">
+
+                    <p class='contacto'>Contactenos en CDMX: 01(55) 8502 2486  PUEBLA: 01(222) 574 7480  LEON: 01(444) 477 101</p>
+                    <div class='menu_options_web' id='options_web'>
+                        <a href="index.html"><p>EMPRESA</p></a>
+                        <a href="#"><p class='vista'>SERVICIOS</p></a>
+                        <a href="productos.html"><p>PRODUCTO</p></a>
+                        <a href="sucursales.html"><p>SUCURSALES</p></a>
+                    </div>
+
+                </div>
+                
+            </div>
+    
+            <div class='menu_options fade-in' id='options'>
+                <a href="index.html"><p class='first_option'>Empresa</p><hr></a>
+                <a href="#"><p>Servicios</p><hr></a>
+                <a href="productos.html"><p>Producto</p><hr></a>
+                <a href="sucursales.html"><p>Sucursales</p></a>
+            </div>
+            
+            <div class='sliders sliders_servicios'>
+                <p>Nuestra <br>experiencia<br> a su servicio.</p>
+                
+            </div>
+
+            <div class='content content_servicios'>
+                <!--<img src="img/back_logo_izq.png" class="logo_back logo_izq">-->
+                <div class='servicios_box'>
+                        <div class="mas_subtitles">
+                            <div class="mas" id='mas' onclick="mas_naranja('mas_1,servicios_contenido')"><p id="mas_1">+</p></div>
+                            <div class="mas_web" id='mas_web' onclick="mas_naranja_web('mas_2,servicios_contenido')"><p id="mas_2">+</p></div>
+                            <p class="servicio_title">Servicio</p>
+                        </div>
+                        
+                        <div class="servicios_contenido" id="servicios_contenido">
+
+                            <div><img src='img/servicios_1.jpg' class='img_servicios' id='img_servicios'></div>
+                            <div class='text_servicios'><p  id='text_servicios'>Nuestro equipo de profesionales apoya y orienta a nuestros 
+                                clientes siempre que requieran información o asesoria en el uso y sugerencia 
+                                de materiales que mejor respondan a cada proyecto.
+                            </p>  </div>
+                            
+                        </div>
+                        
+                </div>
+
+                <div class='servicios_box reparto'>
+                    <div class="mas_subtitles">
+                        <div class="mas" id='mas_reparto' onclick="mas_blanco('mas_reparto,servicios_contenido_reparto')"><p id="mas_reparto">+</p></div>
+                        <div class="mas_web" id='mas_web_reparto' onclick="mas_blanco_web('mas_reparto_web,servicios_contenido_reparto')"><p id="mas_reparto_web">+</p></div>
+                        <p class="servicio_title">Reparto</p>
+                    </div>
+                    
+                    <div class="servicios_contenido" id="servicios_contenido_reparto">
+
+                        <div><img src='img/servicios_2.jpg' class='img_servicios' id='img_servicios'></div>
+                        <div class='text_servicios'><p  id='text_servicios'>Con la finalidad de responder a nuestro objetivo
+                            de servicio inmejorable contamos para comodidad de nuestros clientes con transporte especializado
+                            para entregar los pedidos en cualquier sitio.
+                        </p>  </div>
+                        
+                    </div>
+                    
+                </div>
+                <!--<img src="img/back_logo_der.png" class="logo_back logo_der">-->
+            </div>
+
+            <div class='logos'>
+                <div id="logo_uno" class="logos_imgs"></div>
+                <div id="logo_dos" class="logos_imgs"></div>
+                <div id="logo_tres" class="logos_imgs"></div>
+                <div id="logo_cuatro" class="logos_imgs"></div>
+                <div id="logo_cinco" class="logos_imgs"></div>
+                <div id="logo_seis" class="logos_imgs"></div>
+                <div class="logos_imgs" id="logo_siete"></div> 
+                <div id="logo_ocho" class="logos_imgs"></div>
+                <div id="logo_nueve" class="logos_imgs"></div>
+            </div>
+            <div class='footer'>
+                <p>Grupo Aluminero ORTALUM</p>
+            </div>
+           
+
+
+        </div>
+            
+       
+        
+
+    </body>
+    
+    <script src="js/funciones.js"></script>
+    
+</html>
+
